@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Timer TD</title>
+	<style>
+		.center {
+		margin: auto;
+		width: 90%;
+		border: 3px solid green;
+		padding: 20px;
+		text-align: center;
+		font-size: 4vw
+		}
+	</style>
+	</head>
+
+  <body>
+  <br>
+  <br>
+  <div id="div1" class="center">
+	<label style="font-size: 4vw;" class="CLOCK"></label><br><br>
+	<label style="font-size: 4vw;" class="Movement"></label><br><br>
+	<label style="font-size: 4vw;" class="Cycle"></label>
+	</div>
+	<br>
+	<br>
+  <div id="div2" class="center">
+	<label style="font-size: 4vw; width: 30%; height:30%; display: inline-block">Total Time:</label>
+	<input id="totalTimeMin" type="number" style="font-size: 4vw; width:15vw" value="10">
+	<label style="font-size: 4vw">min </label>
+	<input id="totalTimeSec" type="number" style="font-size: 4vw; width:15vw" value="0">
+	<label style="font-size: 4vw">sec </label><br><br>
+	
+	<label style="font-size: 4vw; width: 30%; display: inline-block">Min Interval: </label>
+	<input id="minTimeMin" type="number" style="font-size: 4vw; width:15vw" value="0">
+	<label style="font-size: 4vw">min </label>
+	<input id="minTimeSec" type="number" style="font-size: 4vw; width:15vw" value="20">
+	<label style="font-size: 4vw">sec </label><br><br>
+	
+	<label style="font-size: 4vw; width: 30%; display: inline-block">Max Interval: </label>
+	<input id="maxTimeMin" type="number" style="font-size: 4vw; width:15vw" value="0">
+	<label style="font-size: 4vw">min </label>
+	<input id="maxTimeSec" type="number" style="font-size: 4vw; width:15vw" value="50">
+	<label style="font-size: 4vw">sec </label><br><br>
+
+	<button class="button" type="button"  style="width: 30vw; font-size: 4vw" onclick="timerStart()">Start</button><br><br>
+
+	<button class="button" type="button"  style="width: 30vw; font-size: 4vw" onclick="timerStop()">Stop</button><br>
+</div>
+
+
+    <script>
+		var totalTimeM = document.getElementById("totalTimeMin");
+		var minTimeM = document.getElementById("minTimeMin");
+		var maxTimeM = document.getElementById("maxTimeMin");
+		var totalTimeS = document.getElementById("totalTimeSec");
+		var minTimeS = document.getElementById("minTimeSec");
+		var maxTimeS = document.getElementById("maxTimeSec");
+		
+		const clock = document.querySelector('.CLOCK');
+		clock.textContent  = "Press Start"
+		const movement = document.querySelector('.Movement');
+		movement.textContent = "Dorsal"
+		const cycle = document.querySelector('.Cycle'); 
+		cycle.textContent = "This cycle is Xs long"
+		var totalS;
+		var cycleS = 0;
+
+		function timerStart() {
+			totalS = totalTimeM.value*60+totalTimeS.value*1
+			var x = setInterval(function() {
+				if (totalS < 0) {
+					beep(999,220,300);
+					clearInterval(x);
+					}
+				else {
+					const seconds = Math.floor( totalS % 60 );
+					const minutes = Math.floor( (totalS/60) % 60 );
+					clock.textContent  = minutes.toString() +"m "+ seconds.toString() +"s remaining";
+					totalS = totalS - 1;
+					if (cycleS == 0) {
+						newRand()
+						};
+					cycleS = cycleS - 1;
+					}
+				}
+				, 1000);
+			};
+		
+		function newRand() {
+			let randomNumber = Math.random();
+			const minS = minTimeM.value*60+minTimeS.value*1
+			const maxS = maxTimeM.value*60+maxTimeS.value*1
+			cycleS = Math.round(minS + randomNumber*(maxS-minS))
+			cycleS = Math.min(cycleS, totalS+1)
+			cycle.textContent = "This cycle is " + cycleS.toString() +"s long"
+			beep(100,520,200)
+			if (movement.textContent == "Frontal") {
+				movement.textContent = "Dorsal"
+				document.getElementById("div1").style.backgroundColor = "coral";
+				document.getElementById("div2").style.backgroundColor = "coral";
+				}
+			else {
+				movement.textContent = "Frontal"
+				document.getElementById("div1").style.backgroundColor = "lightblue";
+				document.getElementById("div2").style.backgroundColor = "lightblue";
+				};
+		};
+		
+		function timerStop() {
+			clock.textContent  = "Timer Stopped"
+			movement.textContent = "Dorsal"
+			cycle.textContent = "This cycle is Xs long"
+			totalS = -1
+			cycleS = 0
+		};	
+
+		a=new AudioContext() // browsers limit the number of concurrent audio contexts, so you better re-use'em
+
+		function beep(vol, freq, duration){
+		  v=a.createOscillator()
+		  u=a.createGain()
+		  v.connect(u)
+		  v.frequency.value=freq
+		  v.type="square"
+		  u.connect(a.destination)
+		  u.gain.value=vol*0.01
+		  v.start(a.currentTime)
+		  v.stop(a.currentTime+duration*0.001)
+		}
+	
+
+	</script>
+  </body>
+</html>
