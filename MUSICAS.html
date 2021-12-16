@@ -4,8 +4,8 @@
 	<style>
 	table{
 		border-collapse: collapse;
-		width: 90%;
-		margin-left: 2.5em;
+		width: 95%;
+		margin-left: 1vw;
 	}
 	
 	td {
@@ -15,15 +15,14 @@
 		white-space: nowrap;
 		text-align: center;
 		padding: 0.5rem;
-		//height: 10px;
 		word-spacing: 15px;
 		width: 22%;
-				
+		font-size: 3vw;	
 	}
 	
 	h1, h2 {
 		display: inline;
-		font-size: 20px;
+		font-size: 4vw;
 	}
 	</style>
 </head>
@@ -103,80 +102,80 @@ function TableOFContent(){
 
 function TEST(){
 	music = [
-	[['Assanhado'],['A'],['A6,%,D7(9),A6'],[],['D7(9),A6,D7(9),A6'],[],['E7(9),%,%,A6'],[],['A7 A7/C#,D7 D7/F#,G7 G7/B,C7 C7/G'],['F7 F7/A,Bb %,E7 E7/G#,A %']],
-	[['Benzinho'],['Dm - F'],['Dm,%,A7,%'],['Bb7,%,A7,%'],['D7,D7 D7/C,Gm/Bb,Gm6'],['E7,%,A7,%'],['Dm,%,A7,%'],['Bb7,%,A7,%'],['D7,D7 D7/C,Gm/Bb,Gm6'],['Dm Bb7,Eb A7,Dm,C7'],[],['F6,F#dim,C7/G,%'],['Gm7,G#dim,F/A,F6'],['F7 E7 Eb7,D7,G7,%'],['Bbm/Db,C7,F6 Am/E,Bb C'],['F,F#dim,C7/G,%'],['Bb7,A7,Dm,D7'],['Gm,G#dim,F7 E7 Eb7,D7'],['G7,Bbm C7,F,C7 (↖B) A7(↖A)']],
-	[['Cochichando'],['Dm - F - D '],['Dm,A7 Em7(b5),A7,Dm A7'],['Dm Bm7(b5),Am,E7,A7'],['Dm,A7,%,Cm6 D7'],['Gm Em7(b5),Dm Dm/C,E7/B A7,Dm (1x)'],[',,,Dm Db7 C7 (2x)'],[',,,Dm A7 (3x)'],[],['F D7/F#,Gm,C7 C/Bb,F/A'],['A7/C#,Dm,G7,C7'],['D7/F#,Gm,E7/G#,Am'],['Bb Bbm6/Db,F/C Dm,Gm C7,F A7'],[],['D A7,D,D B7/D#,Em'],[',,D D#dim,'],['F#7,B7/D#,E7,A7'],['D,%,Am D7/C,G/B'],['Gm6/Bb,D/A Abdim,Em/G A7,D A7 (1x)'],[',,,D (2x)'],[',,,Dm (3x)']],
-	[['Choro Negro'],['Gm - G (H)'],['Bbm6 Abm6,Gm Gm(#5) Gm6,Cm7 F7,Bb7M Bb6'],['Bb7 Eb7(9),Ab7M,A7sus4 A7,Cm6 D7'],['Bbm6 Abm6,Gm Gm(#5) Gm6,Cm7 F7(13),Bb7M Bb6'],['Bb7 Eb7(9),G7M E7,Am7 D7,G6'],[],['Bm7,Cm6,G G7,C7M'],['Cm7 F7,Bb Gm,Em7 A7,Am7 A#°'],['Bm7,Cm6,G G7,C7M'],['C7M C#°,G/D E7,Am7 D7,G6'],[],['Bbm6 Abm6,Gm6,,']],
-	[['Diplomata'],['Gm - Bb'],['Gm Gm/Bb,D7/A D7,Gm Gm/Bb,D7/A D7'],[],['Gm Gm/Bb,D7/A,D7/F#,Gm'],['G7/B,Cm7,F7,Bb D7'],['Gm Gm/Bb,D7/A,D7/F#,Gm G7/B'],['Cm7 F7,Bb Eb,Ab D7,Gm'],[],['F7,Bb,D7/F#,Gm'],['Eb Edim,Bb/F,C7/E F#7,F7'],['F7,Bb,D7/F#,Gm'],['Eb Edim,Bb/F Gm7,Cm7 F7,Bb'],['D E F# G,Bb Bb A Eb,Eb D,']],
-	[['Flor Amorosa'],['C - Am - F'],['Dm7 G7,C7M,Dm7 G7,Gm C/Bb'],['F/A Fm6/Ab,C7M A7,D7 G7,C7M'],[],['Am Am/G,Dm/F,Bm7(b5) E7,Am7 E7'],['Am7 A7/C#,Dm,E7 Bm7(b5) E7,Am7'],[],['C7,F7M F#dim,Gm7,C7'],['F7M C7,F7M,Am7,E7'],['Am7 C7,F7M F#dim,Gm7,C7'],['F7M C7,F7M F7,Bb7M Bdim,F D7 Gm C7']],
-	[['Gaúcho (Corta Jaca)'],['Dm - F'],['Dm Dm/F,A7/E A7/G,Dm Dm/F,A7/E A7/C#'],['Dm,A7/E,Dm,A7/E'],['Dm,A7/E,Dm,A7/E'],['D7,Gm,A7,Dm'],['D7,Gm,A7,Dm'],['A7/E,Dm,A7/E,Dm D Db C'],[],['C7,%,F,%'],['Gm,C7,F G A B,C F D C A F'],['C7,%,F,%'],['(1x) Dm,Bb,A7, A Bb B C'],['(2x) Gm,C7,F,A7 ']],
-	[['Naquela Mesa'],['Am - Dm - Em'],['Am,%,%,%'],['Dm,%,E7,%'],['Am E7,Am,%,A7'],['Dm,%,Am,Bm7(b5) E7'],['Em7(b5) A7,Dm,Am,Bm7(b5) E7'],['A7,,,'],['Dm,%,%,%'],['Gm,%,A7,%'],['Dm A7,Dm,%,D7'],['Gm,%,Dm,Em7(b5) A7'],['Am7(b5) D7,Gm,Dm,Em7(b5) A7'],['Am B7,,,'],['Em,%,%,%'],['Am,%,B7,%'],['Em B7,Em,%,E7'],['Am,%,Em,F#m7(b5) B7'],['Bm7(b5) E7,Am,Em,F#m7(b5) B7']],
-	[['Noites Cariocas'],['G - C'],['G7M,%,Bbdim,D7'],['G7M,E7/G#,Am E7/B,Am/C'],['Am Am/G#,Am/G,F#m7(b5) Am/E,D7'],['D7,D(#5),G7M Em,Am D7'],[',x5433x,,'],['G7M,%,Bbdim,D7'],['G7M,E7/G#,Am E7/B,Am/C'],['C,Bbdim,G7,E7'],['A7,D7,G7M,%'],[],['G7,%,C,%'],['A7,%,Dm A7/E,Dm/F'],['F,F#dim,C/G,Am B7'],['E C#m,F#m B7,E,G7'],[],['G7,%,C,%'],['A7,%,Dm A7/E,Dm/F'],['F,B7/F#,E7/G#,A7'],['Dm,G7,C,%'],[',,C C#7,D7'],[],['C#dim,Bbdim,G7 F#7 F7,E7'],['A7,D7,G,%']],
-	[['Odeon'],['Dm - F (H)'],['Dm/F A7/E,Dm D/C,Gm/Bb D7/A,Gm'],['Gm Gm/F,Em7(b5) Bb7/D,A7/C# A7/E,Dm'],['Dm A7/E,Dm/F D7/F#,Gm D7/A,Gm/Bb'],['A7,Dm Gm,A7/C#,Dm'],[],['G/D C7/E,F F/A,C7/G,F#°'],['Gm/Bb,F/C B°/C,C7,F F/C (1-3x)'],[',,,F (2-4x)'],[],['F#°,C7/G,C7,F'],['F#°,C7/G,C7,F'],['F#°,Gm,A7/E,Dm'],['B°,F/C,G7/C,C7'],[',F/C F/A,Gm/Bb C7,F']],
-	[['Proezas de Solon'],['Dm - F - Bb (H)'],['F D7/F#,G7,C7 C7/G,F'],['F,C,G/B,C'],['F D7,Gm,A7,Dm'],['Bb Ab°,F/A D7,G7 C7,F'],['Bb B°,F/C D7/F#,,F'],[],['A7,Dm,D7/F#,Gm'],['Em7(b5),Dm,E7/G#,A7 (bb - b)'],['C7,F,A7,Dm D7/F#'],['Gm,Dm,A7/C#,Dm'],[',,,d - db - C7'],[],['Bb,Cm7,C7,Ebm/Gb F7'],['Bb G7/B,Cm7,F7,Bb'],['Bb7 ou Bb/Ab,Eb ou Eb/G,G7/B,Cm'],['Ebm/Gb,Bb/F Gm7,C7/E F7,Bb'],[',,,bb- b - C7']],
-	[['Rosa'],['Dm - F (H)'],['Bb,Bbm6,F/A,D7(9)'],['Gm7,C7,F,C(#5)'],[],['F,F/A,Gm,C7'],['F,F/A,Gm,Gm7'],['A7/C#,A7,Dm,D7(9)'],['Gm,G7,Gm7,C7'],['F,F F/A,Gm,C7'],['Cm7,F7,Bb F7,Bb'],['Bbm/Db,Gm7(b5),F,D7'],['Gm Gm7,C7(9),F C7,F A7'],[',,,F F7'],[],['Dm,Dm/C,Gm/Bb,A7'],['A/G,Dm/F,Dm,D/C'],['D7,Gm,Gm/F,E7'],['E7(b9),A7,,Dm'],['Dm/C,E7/B,Gm/Bb,A7'],['A/G,D7/F#,D7(b9),Gm'],['A7(b13),Dm,%,Gm'],['A7(b9),Dm A7,Dm C7,']],
-	[['Vibrações'],['Dm - F (H)'],['Dm A7/E,Dm/F D7/F#,Gm D7/A,Gm/Bb'],[', xx4535,xx5333 xx7575,xx8786'],['A7,%,Dm A7,Dm'],['Cm6,D7,A°,Gm'],['E7/G#,E7,Gm6,A7'],['Cm/Eb,D7,G7,%'],['Bbm6/Db,C7,F,F D7'],['xx4536x,,,'],['Gm,Em7(b5),Dm,%'],['Gm,A7,Dm Db7,C7'],[',,Bb7,Gm6 - D'],[],['F,%,A7,%'],['Dm,%,Cm7,F7'],['Bb,Bbm6,F,Dm'],['G7,%,C7,Bbm6 C7'],['F,%,A7,%'],['Dm,%,Cm7,F7'],['Bb,Bbm6,F,A7 D7'],['G7,Bbm6 C7,F,%']],
-	[['A Banda'],['D'],['D6,A7,F#m7 B7,E7 A7'],[],['D6,D7M,A7,Am6/C B7'],['Em7 Em/D,C#m7 F#7,F#m7 B7,E7'],['Em7 A7,D7M,A7,Am6/C B7'],['Em7 Em/D,C#m7 F#7,F#m7 B7,E7 A7'],[],['D6 B7,E7 A7,D6 B7,E7 A7'],['D6,,,']],
-	[['A Flor e o Espinho-1'],['Am'],['Am,Am/G,Dm/F,%'],['Bm7(b5),E7,Am,%'],['Em7(b5),A7,D7,%'],['Dm,G7,C,E7'],['Bm7(b5),E7,Am,Am/G'],['Dm/F,E7,Am,E7(1x) A7 Ab7(2x)'],[],['G7,%,Am,%'],['Em7(b5),A7,Dm,%'],['Bm7(b5),E7,Am,Am/G'],['Dm/F,%,Bm7(b5),E7']],
-	[['A Flor e o Espinho-2'],['Dm'],['Em7(b5),A7,Dm,Dm/C'],['Gm6/Bb,A7,Dm,A7'],[],['Dm,Dm/C,Gm6/Bb,%'],['Em7(b5),A7,Dm,%'],['Am7(b5),D7,G7,%'],['Gm7,C7,F,A7 (2x to 4)'],['Em7(b5),A7,Dm,Dm/C'],['Gm6/Bb,A7,Dm,A7(1) Dm Db7(2x)'],[],['C7,%,F,%'],['Am7(b5),D7,Gm,%'],['Em7(b5),A7,Dm,Dm/C'],['Gm6/Bb,%,Em7(b5),A7 (to 2)'],[],['Gm6,A7,Dm,Dm/C'],['Gm6/Bb,A7,Dm,D7 (1-2) Dm (3)']],
-	[['Agoniza Mas Não Morre'],['Cm'],['Cm7,%,G7/B,%'],['Gm7(b5),C7,Fm,%'],['Ab7,G7,Ab6,Dm7(b5)'],['G7,Cm,Bbm/Db,C7'],['Bbm/Db,C7,Bbm/Db,C7'],['Fm,%,F#dim,Cm'],['Cm/Bb,D7,G7,Bbm/Db C7'],['Fm,F#dim,Cm,Cm/Bb'],['D7,G7,Cm7,']],
-	[['Apelo'],['Am'],['Am,E/G#,Gm6 A7(b9),Dm7 A7(b13)'],['Dm Dm/C Bm7(b5) E7(b9),Am7 Am/G,Dm/F Bb7(#11),Bm7(b5) E7(b9)'],['Am,E/G#,Gm6 A7(b9),Dm7 Eb7(9)'],[],['Dm7 D#dim,Am7/E F7M,Dm7 E7(b9),Am7 E7(b9) (1x)'],[',,,Em7 A7(b9) (2x)'],[',,,Am7 (3x)']],
-	[['Arrasta Pe'],['Gm'],['D7,Gm,D7,Gm G7'],['Cm7 F7,Bb Gm,Cm6 D7,Gm'],[],['D7,Gm,D7,Gm (1x)'],[',,,Gm G6 (2x)'],[],['D7,G6,D7,G'],['D7,G,D7,G (1x)'],[',,,G Gm6 (2x)']],
-	[['Baile do Elite'],['A'],['A D#dim,A/E F#7,B7 E7,A'],[],['Bm7,E7,A,%'],['Em7,A7,D,%'],['Dm/F,G7,A G7,F#7'],['B7/D#,E7,A,']],
-	[['Barracão-1'],['Cm'],['Cm,Db,Dm7(b5) G7,Cm'],['Cm,Bb7,Ab7,G7'],[],['G7,Cm,Db,G7']],
-	[['Barracão-2'],['Am - Dm'],['Am,Bb,Bm7(b5) E7,Am'],['Am,G7,F7,E7'],[],['E7,Am,Bb,E7 (1x)'],[',,,Bm7(b5) E7 (2x)'],['Em7(b5) A7,,,'],['Dm,Eb,Em7(b5) A7,Dm'],['Dm,C7,B7,A7'],[],['A7,Dm,Eb,A7']],
-	[['Chega de Saudade'],['Dm - D'],['Gm7,A7,Dm,Dm/C'],['E7/B,A7,Dm7,Eb7(9)'],[],['Dm,Dm/C,E7/B (Bdim),%'],['Bbm6,A7(b13),Dm7,Eb7(9)'],['Dm7,Dm6,Am7,%'],['Bb6,%,A7,A7(b13)'],['Dm,Dm/C,E7/B,%'],['Bbm6,A7(b13),D7M,D7(b9)'],['Gm7,A7(b13),Dm,Am/C'],['E7/B,Bbm6 A7(b13),Dm7,Em7 A7(13)'],[],['D7M(9),B7(b13),E7(9),E7'],['A74(9),A7(9),Ddim,D6'],['D7M,Ddim(7M),Em7,%'],['E7(9),%,Gm6/Bb,A7(b9)'],['D7M(9),Bm7,E7(9),%'],['F#7,%,Bm7 Bbdim,Am7 D7(b9)'],['G7M,Gm7,F#m7,B7(13) B7(b13)'],['E7(9),A4(913),F#7(13) F#7(b13),B7(b13)'],['E7(9),A4(913),D69,B7(b13)'],['E7(9),A4(913),D69,B7(b13)'],['E7(9),A4(913),D69,']],
-	[['Corcovado'],['Am (H)'],['Am6,G#dim(b13),Gm7,C7(9)'],['F7M,Fm6,Em7,Am7'],['D7(9),G#dim(b13),,'],[],['Am6,%,G#dim(b13),%'],['Gm7,C74(9),Gb7(#11),F6'],['Fm7,Bb7(9),E7(13) E7(b13),A74(9) A7(b9)'],['D7(9),%,F6/G,Fm6'],[],['Am6,%,G#dim(b13),%'],['Gm7,C74(9),Fdim,F6'],['Fm7,Bb7(9),Em7,Am7'],['Dm7,G74(9) G74(b9),E7(13) E7(b13),A74(9) A7(b9)'],['Dm7(9),G74(9) G#dim,Am6,']],
-	[['Corra e Olhe o Céu-2'],['D'],['G6,Gm6/Bb,D/A,B7 B7/F#'],['E7,A7,Am/C,D7(9) Am6'],['G7M/B,G#dim,D,B7/D#'],['E7,A7,D,A7/C#'],[],['D6(9),%,A7/C#,%'],['Am/C,D/C,G7M/B,%'],['Gm6/Bb,%,E7/G#,A7'],[],['D6(9),%,A7/C#,%'],['Am/C,D7/A,G7M,Bdim'],['D,B7/D#,E7,A7'],['Am,D/C,G7M/B,G#dim'],['D/F#,B7,E7,A7'],['D,A7(1-2x) D7/F# (3x),,']],
-	[['Corra e Olhe o Céu-1'],['D'],['G6,Gm6,D,B7'],['E7,A7,Am7,D7(9)'],['G7M,G#dim,D,B7'],['E7,A7,D,A7'],[],['D,%,A7,%'],['Am7,D7(9),G7M,%'],['Gm6,%,E7,A7'],[],['D,%,A7,%'],['Am7,D7(9),G7M,G#dim'],['D,B7,E7,A7'],['Am7,D7(9),G7M,G#dim'],['D,B7,E7,A7'],['D,A7 (1 2x) D7(3x),,']],
-	[['Dança da Solidão'],['Am'],['Am,A7,Dm E7,Am B7'],['E7,Am A7,Dm,Am E7'],['A7,,,'],[],['Dm Bm7(b5) E7,Em7(b5) A7,Dm Bm7(b5) E7,Am'],[],['E7,Am,A7,Dm'],['Bm7(b5) E7,Am,E7,Am']],
-	[['De Mais Ninguém'],['Am'],['Dm Bm7(b5),Am B7 E7,,'],[],['Am Am/G,F6,Bm7(b5) E7,Am E7'],['Am A7/C#,Dm,G7 G/F,C/E C/Bb'],['A7 A7/C#,Dm,G7,C E7/B'],['Am Am/G,F6,Bm7(b5) Dm6/F,E7 E7/G#'],[],['Am Am/G,F6,Bm7(b5) E7,Am E7']],
-	[['Fita Amarela'],['Dm'],['Dm,Em7(b5) A7,Em7(b5) A7,Dm A7'],[],['Dm,Em7(b5),A7,Dm']],
-	[['Insensatez'],['Am'],['Am7,E7/G#,Gm6,D/F#'],['Dm/F,Bb7M,Bm7(b5) E7(b9),Am7'],['C7/G,Gbdim,F7M Dm7(9),Am7'],['C7/G,B7/F#,Dm6/F E7(b9),Am7']],
-	[['Juízo Final'],['Cm'],['Cm,Db,G7,Fm'],['Ab7,G7,Cm,Db'],['G7,Fm,G7,Cm C7'],[],['Fm,G7,Ab7,G7'],['Fm,G7,Ab7,G7']],
-	[['Me Erra'],['Am'],['Dm,Am,F7 E7,A7'],['Dm,Am,F7 E7,A7'],['Dm,Am,Bm7(b5) E7,Am A7'],[],['Dm,Am,Bm7(b5) E7,Am A7'],[],['A7,Dm,G7,Am7'],['F,E7,Dm E7,Am']],
-	[['Meu Caro Amigo'],['Am (H)'],['3xC/E Eb°,Dm7 G7/F,C/E Eb°,Dm7 G7/F'],[', xx3433,,'],['Gm7 C7,F/A Fm/Ab,C/E D7,G7(4) G7'],[],['C/E Eb°,Dm7 G7/F,C/E Eb°,Dm7 G7/F'],['C/E Eb°,Dm7 G7/F,C/E Eb°,Bm7(b5) E7/G#'],['Am Am/G,F#m7(b5) B7,Em7(b5) A7,D7/F# G7/F'],['C/E Eb°,Dm7 G7/F,Em7(b5),A7'],['D7,Fm6/Ab,Em7 A7,D7(9) G7(13)'],['Em7(b5) A7,D7(9) G7(13),Em7(b5) A7,D7(9) G7(13)'],['C6(9),,,']],
-	[['O Mundo é um Moinho'],['A'],['D#m7(b5),E/D,C#m7,Cº'],['Bm7,B7 E7,A6(9),G7 F#7'],[],['Bm7 Bm/A,E7/G# E7,C#m7,A A/G'],['D/F#,Bm7,E7,C#m7(b5) F#7(1) E7/B (2)'],[',,,Em7 A7'],[],['D#m7(b5),E/D,C#m7,Cº'],['Bm7,E7,Bbdim,F#7 F#7/E'],[',,A6(9),G7 F#7']],
-	[['Onde Anda Você'],['C'],['A7(#9),D7(9),G7(13),C7M'],['Em7 D#dim,Dm7,G7(13),C7M(1x) Gm7(2x)'],[],['C7(9),F#m7(b5),Fm6,Em7(11)'],['A7(b9),D7(9),G7(13),E7(13) E7(b13)'],['A7(9) C7,F#m7(b5),Fm6,Em7'],['A7(b9),D7(9),G7(13),C7M']],
-	[['Para Ver as Meninas-1'],['Am'],['Am C7,B7,Bm7(b5) E7,Am A7'],['Em7(b5) A7,Dm,G7,C7M E7'],[],['A7,Em7(b5) A7,Dm,Bm7(b5) E7'],['Am,C7,F7 E7,Am E7'],[],['Am G7,C7M A7,Dm E7,Am A7'],['Dm Bm7(b5) E7,Am E7,Am,']],
-	[['Para Ver as Meninas-2'],['Gm'],['Gm Bb7,A7,Am7(b5) D7,Gm G7'],['Dm7(b5) G7,Cm,F7,Bb7M D7'],['G7,Dm7(b5),G7,Cm'],['Am7(b5) D7,Gm,Bb7,Eb7 D7'],['Gm D7,Gm F7,Bb7M G7,Cm D7'],['Gm G7,Cm Am7(b5) D7,Gm D7,Gm']],
-	[['Pressentimento-1'],['Am'],['Am Am/G#,Am/G F#m7(b5),Dm/F E7,Am E7'],[],['Am E7,Am,Dm/F G7,C'],['Bm7(b5) E7,Am Am/G,Dm/F Bm7(b5),E7 E7/G#'],['Am E7,Am,Dm/F G7,C'],['Bm7(b5) E7,Am Am/G,B7/F# E7,Am E7'],[],['A F#m,C#m,D E7(9),A A7/C#'],['Bm7(b5) E7,Am Am/G,B7/F#,E7 G7'],['C,G7,F G7,C'],['Bm7(b5) E7,Am Dm7,Am E7,Am E7']],
-	[['Pressentimento-2'],['Gm'],['Gm,Gm Em7(b5),Cm D7,Gm D7'],[],['Gm D7,Gm,Cm F7,Bb'],['Am7(b5) D7,Gm,Cm Am7(b5) ,D7'],['Gm D7,Gm,Cm F7,Bb'],['Am7(b5) D7,Gm,A7 D7,Gm D7'],[],['G Em,Bm,C D7(9),G'],['Am7(b5) D7,Gm,A7,D7 F7'],['Bb,F7,Eb F7,Bb'],['Am7(b5) D7,Gm Cm7,Gm D7,Gm D7']],
-	[['Sampa'],['C'],['D7(9),Abm6 G7,C7M,G7(b13)'],[],['C7M,Bm7(b5) E7(b9),Am Am/G#,Am/G F#m7(b5)'],['F7M,A7 A7/C#,Dm A7/E,Dm/F'],['G7,G#dim Bdim,Am E7/B,Am/C'],['D7(9),%,%,%'],['Dm/F,G7,C7M,C/Bb'],['F/A,F#dim Adim,C/G A7(b13),Dm7(9) G7(b13)'],['E7/G#,A7(b13),D7(9),Abm6 G7'],['C7M,G7(b13),,']],
-	[['São Demais os Perigos dessa Vida'],['C (H)'],['Em(ad9) C7M/E,C7 B7,Am6/C B7,Em(ad9)'],['Dm6/F E7(b9),Dm6/F E7(b9),Dm6/F E7(b9),Dm6/F E7(b9)'],['Am7 Am/G,B7/F# B7,F#m7(b5) B7,Dm6/F E7(b9)'],['Am7,A#dim ,Em/B C7M,F#m7(11) B7'],['E74 E7(b9),A#dim ,Em/B C7M,F#m7(11) B7'],['Em7(9),F#m7(b5) B7,Em7(9),Bm7(b5) E7(b9)'],['Am7,D7(9) D/C,C#m7(b5) C7M,B7'],['E74 E7,Bm7(b5) E7(b9),Am7 Am/G,Am6/C B7'],['Dm6/F E7(b9),Bm7(b5) E7(b9),Am7 Am/G,Am6/C B7'],['Em7(9) B7,Em7,C7 B7,Am6/C B7'],['C7M F7M,Em7(9),,']],
-	[['Se a Fila Andar'],['Bb'],['Eb,Ebm,Dm,G7'],['C7,Ebm F7,Bb7M Bb6,Fm7 Bb7 (↖A)'],[',,Bb,F7 (↙B)'],[],['Bb,%,C7,%'],['Cm,F7,Bb,Bb6 Bb7M Cm F7 (↖)'],[',,Bb7M,Fm Bb7 (↖A)']],
-	[['Tiro Ao Álvaro'],['Bb'],['Bb G7/B,Cm7,F7,Bb Bb7'],['Eb Ebm,Dm7 G7,Cm7 F7,Bb F7(1x) Bb7(2x)'],[],['Eb F7,Bb G7,Cm7 F7,Fm7 Bb7'],['Eb F7,Bb G7,Cm7 F7,Bb F7']],
-	[['Tristeza Pé no Chão'],['Dm'],['Dm,A7,Dm,%'],['%,D7,Gm,%'],['%,Bb A7,Dm,Dm7'],['Bb,A7,Dm,A7 (1x) D7 (2x)'],[],['Gm,%,Dm,Dm7'],['Bb,A7,Dm,D7 (1x) A7 (2x)']],
-	[['Velho Ateu-1'],['Gm'],['Gm,Cm,F7,Bb D7'],['Gm G7,Cm,Eb7 D7,Gm D7'],[',,,Gm Gb7'],[],['F7,Bb,G7,Cm'],['D7,Gm,A7,D7']],
-	[['Velho Ateu-2'],['Em'],['Em,Am,D7,G B7'],['Em E7,Am,C7 B7,Em B7'],[',,,Em Eb7'],[],['D7,G,E7,Am'],['B7,Em,F#7,B7']],
-	[['No Cordao da Saidera'],['Em (H)'],['Em,C/Bb,F#m7(b5) B7(b9),Em7'],['Bm7(b5) E7(b9),Am7 F#m7(b5),Em7(9) F#7,Am6/C B7'],['E7,Am7 A#°,G/B C7M,Bm7(b5) E7(b9)'],[],['A/C# Cm6,G/B Bb°,Am7 B7(b9),Bm7(b5) E7(b9)'],[],['Am7 A#°,G/B C7M,F#m7(b5) B7(b9),Bm7(b5) E7(b9) (1x / 3x)'],[',,,Em7 B7(b9) (2x -> A)']],
-	[['Samba de um Minuto'],['Gm (H)'],['Gm Gm/Bb,Am7(b5),Gm Gm/Bb,Am7(b5)'],['Gm Gm/Bb,Am7(b5),Gm Gm/Bb,F#°'],[],['Gm,%,Cm,Am7(b5)'],['Eb7 D7,Gm,F7,Bb'],['F7,Bb G7/B,Cm7 D7,Gm G7/B'],['Cm D7,Gm,Gm,F7'],['Eb7,D7,Cm D7,Gm Gm/F'],['Eb7,D7,F7,Bb'],['Am7(b5) D7,Gm G7/B,Cm D7,Gm'],['Eb7 D7,Gm,,']],
-	[['Coisa de Pele (7crds)'],['G (H)'],['G6 G6/D,Am/C,Bm,E7 E/D'],['Am/C,D7,G E7/G#,Am D7/F#'],[],['G7M,F#m7(b5) B7/D#,Em Em/D,Dm/F G7'],['C Cm/Eb,G E7,A7/C#,Am/C D7'],[],['Gm,D7,Dm7(b5) G7,Cm G7/D Cm/Eb'],['F7,Bb/D,A7/C#,Cm/Eb D7'],['G D7,,,'],[],['G D7/F#,Em,Am D7,G D7']],
-	[['Cinema Mudo'],['Gm - G (H)'],['Gm Gm(5#),Gm6 Gm(5#),Gm Gm(5#),Gm6 Gm(5#)'],[],['Gm,%,Cm,%'],['D7,%,Gm,Gm D7'],['Gm,Em7(b5),Dm,%'],['A7,%,Cm,D7'],['G7,%,Cm,Cm Cm7'],['F7,%,Bb Ab7,G7'],['Cm,Am7(b5) D7,Gm,Bb7'],['A7,D7,,'],[],['G/B,Am D7,G,%'],['B7,%,Em,%'],['G7,Dm7 G7,C,%'],['Cm6,D7,G/B,G#dim'],['D7/A,D7,G,%'],['B7,%,Em,%'],['G7,Dm7 G7,C,Cm6'],['G,E7,Am,D7'],['G,D7,,'],[],['D7,Gm,Cm6,Gm']],
-	[['So pra chatear'],['Cm'],['Cm,,Fm,'],['Cm,,Ab,'],['Ab,,G7,Cm'],[],['Fm,,Bb7,'],['Eb,,Cm,'],['Dm7(b5),,G7,Cm'],[],['Bb7,,Eb,'],['G7,,Cm,Gm7(b5) C7'],['Fm,,Cm,'],['Ab7,,G7,C7'],['Fm,,Cm,'],['Ab7,G7,Cm,']],
-	[['Lua Aberta'],['Dm'],['Dm A7,Dm F,Bb7 A7,Dm A7'],[],['Dm,A7,Dm,Cm D7'],['Gm (D7),Gm,A7,Dm'],['Bb7,A7,,'],[],['C7,F,Cm D7,Gm'],['Em7(b5),A7,Dm,Bb7'],['A7,Dm,,'],[]],[['Mulheres'],['Bm'],['Bm B7,Em A7,D Bm,Em F#7'],['Bm B7,Em A7,D Bm,Em F#7'],['Bm B7,F#7,Bm B7,G F#'],[],['Bm B7,G F#7,Bm B7,Em F#7']],
-	[['Renascer das Cinzas'],['Am'],['Am A7,Dm,Bm7(b5) E7,Am'],['Em7(b5) A7,Dm,G7,C Bm7(b5) E7']],
-	[['Deixa eu ir a luta'],['Cm'],['Cm,Eb7,Ab7M,G7'],['Cm,Eb7,Ab7M,G7'],[],['Cm,Cm,Bb7(4),Bb7'],['Eb,Eb,Bb7(4),Bb7'],['Eb,Eb,Dm7(b5),G7'],['Cm,Cm,Dm7(b5),G7']],
-	[['Do jeito que o rei mandou'],['Bm'],['Bm,Bm B7,Em,C#m7(b5) F#7'],['Bm Bm/A,Em/G,F#7,Bm'],[],['Bm,B7 Em,Em C#m7(b5),F#7 Bm'],['F#7 Bm,B7 Em,F#7 Bm,F#7 Bm'],['F#7,,,']],
-	[['Naquele Tempo'],['Dm'],['A7,Dm,A7,Dm'],['D7,Gm,E7,A7 (break)'],['A7,Dm,A7,Dm'],['D7,Gm Em7(b5),Dm E7 A7,Dm'],[],['F A7 Dm D7,Gm,C7,F'],['A7,Dm,G7,C7'],['F A7 Dm D7,Gm,A7,Dm'],['Gm A7,Dm D7,Gm C7,F'],[],['D A7,D,D B7,E7'],['E7,A7,A7,D A7'],['D A7,D,D7,G'],['Gm,D B7,E7 A7,D Bm E7 A7']],
-	[['Propagas'],['Cm'],['Cm,Bb,Ab,G7'],[],['Cm Fm,G7 Cm,Cm Fm,G7 Cm'],['Cm Bb,Ab G7,Cm Fm,G7 Cm'],[],['Cm Fm,G7 Cm,Cm Bb,Ab G7']],
-	[['A semente'],['Dm'],['Gm A7,Dm,Gm A7,Dm']],
-	[['Sufoco'],['Am'],['Am7,Bm7(b5) E7(b9),Am7 ,Dm/F G7'],['C G/B Gm/Bb A7,Dm G7,C F7M,Bm7(b5) E7'],['A7 A7/C#,Dm G7,C F7M,Bm7(b5) E7'],['A F#7 Bm7 E7,,,'],[],['A A#dim,Bm7,E7 E7/G#,A E7'],['A F#7,Bm7,E7 E7/G#,A A#dim Bm7 E7']],
-	[['Fadas-1'],['Am'],['Am,B7,Bm7(b5) E7,Am E7'],['Am,B7,Bm7(b5) E7,Am E7'],['Am,B7,Bm7(b5) E7,Am A7'],['Dm G7,C,B7,E7'],[],['Am,Dm,Bm7(b5) E7,Am E7'],['Am,Dm,Bm7(b5) E7,Am']],
-	[['Fadas-2'],['Dm'],['Dm,E7,Em7(b5) A7,Dm A7'],['Dm,E7,Em7(b5) A7,Dm A7'],['Dm,E7,Em7(b5) A7,Dm D7'],['Gm C7,F,E7,A7'],[],['Dm,Gm,Em7(b5) A7,Dm A7'],['Dm,Gm,Em7(b5) A7,Dm']],
-	[['Onde Está Florisbela'],['Dm/F'],['F,A7,Dm,A7'],['Dm,%,C7,Bb7'],['A7,%,Dm,%'],['G7,%,Gm,C7'],[],['F,A7,Dm,A7'],['Dm,Bb7,A7,D7'],['Gm,C7,F,D7'],['Gm,C7,F,D7'],[],['Gm,C7,F,%'],['Cm7,F7,Bb,%'],['Bbm,%,Am,D7'],['Gm,C7,F*,C7*']],
-	[['Tiê'],['F'],['F,Gm C7,F,Gm C7']],
-	[['Faixa Amarela'],['D'],['D B7,Em,A7,D A7']],
-	[['Jura'],['C'],['G7 C,G7 C,G7 C,G7 C G7'],[],['C,Dm,G7,C'],['C,G E7,A7 D7,Dm G7'],['C,Dm,G7,C'],['C7,F D7,C G7,C C7'],[],['F G7,C A7,Dm G7,C C7'],['F G7,C A7,Dm G7,C']],
-	[['O Quitandeiro-1'],['C'],['C G7,C,C A7,Dm A7'],['Dm A7,Dm A7,Dm G7,C A7 Dm G7'],['C G7,C,Gm C7,F'],['Fm,Em A7,Dm G7,C G7'],[',,,C A7'],['Dm G7,C,Gm C7,F'],['Fm,Em A7,Dm G7,C G7']],
-	[['O Quitandeiro-2'],['D'],['D A7,D,D B7,Em B7'],['Em B7,Em B7,Em A7,D B7 Em A7'],['D A7,D,Am D7,G'],['Gm,F#m B7,Em A7,D A7'],[',,,D B7'],['Em A7,D,Am D7,G'],['Gm,F#m B7,Em A7,D A7']],
-	[['Papai Vadiou'],['F'],['F D7,Gm C7,F D7,Gm C7']],
-	[['Ultimo Desejo'],['Gm / G'],['Gm,Cm,D7,Gm Cm6/Eb D7'],['Gm,F7,Eb7,D7'],['G7,Cm,D7,Ab7 G7'],['Cm,Gm,Ab D7,G E7 Am D7'],[],['G,A7,Am D7,G Cm D7'],['Gm,F7,Eb7,D7'],['G,A7,Am D7,Dm G7'],['C Cm,G E7,Am Cm D7,Gm']],
-	[['O Bom Filho à Casa Torna'],['Dm / F / D'],['Dm A7,Dm A7,Dm C7,E7 A7'],['Dm A7,Dm A7,D7 Gm,Dm A7 Dm'],[],['C7 F,Gm C7 F,Gm A7 Dm,Bb7 A7'],['C7 F,Gm C7 F,Gm A7 Dm Bb7,F C7 F'],[],['D A7,D A7,D A7,D A7'],['D G,D D7,G7,F#7'],['G7,F#7,Em A7,D'],['A7 A,Fdim D7,G Gm,D B7'],['Em A7,D A7 D,,']],
-	[['Pagode na casa do gago'],['C'],['G7 C,A7 Dm,Dm G7,G7 C'],['G7 C,A7 Dm,Dm G7,G7 C'],[],['A7 Dm,G7 C,A7 Dm,G7 C'],['A7 Dm,G7 C,A7 Dm,G7 C']],
-	[['Aí, seu pinguça'],['Dm / F'],['A7 Dm,A7 Dm,D7 Gm,E7 A7*'],['A7 Dm,A7 Dm,D7 Gm,Dm A7 Dm'],[],['F F(#5) Gm,C7 F,F G7 C,Dm G7 C7'],['F F(#5) Gm,A7 Dm,Bb F D7,Gm C7 F']],
-	[['Jogo de sedução'],['C'],['C,C7,F,Fm']],
-	[['Insensato Destino'],['G'],['G,F#m7(5-) B7,Em,Dm G7'],['C Cm,G E7,A7,Am D7'],['C Cm,G E7,Am D7,Dm G7'],['C Cm,G E7,Am D7,G'],['Gm,Cm,F7,Bb7+'],['Am7(5-),D7 Gm,Gm7 A7, D7 Gm'],['Gm7 A7,D7 Gm,Gm7 A7,D7 Gm']]
+[['Assanhado'],['A'],['A6,%,D7(9),A6'],[],['D7(9),A6,D7(9),A6'],[],['E7(9),%,%,A6'],[],['A7 A7/C#,D7 D7/F#,G7 G7/B,C7 C7/G'],['F7 F7/A,Bb %,E7 E7/G#,A %']],
+[['A Banda'],['D'],['D6,A7,F#m7 B7,E7 A7'],[],['D6,D7M,A7,Am6/C B7'],['Em7 Em/D,C#m7 F#7,F#m7 B7,E7'],['Em7 A7,D7M,A7,Am6/C B7'],['Em7 Em/D,C#m7 F#7,F#m7 B7,E7 A7'],[],['D6 B7,E7 A7,D6 B7,E7 A7'],['D6,,,']],
+[['A Flor e o Espinho-1'],['Am'],['Am,Am/G,Dm/F,%'],['Bm7(b5),E7,Am,%'],['Em7(b5),A7,D7,%'],['Dm,G7,C,E7'],['Bm7(b5),E7,Am,Am/G'],['Dm/F,E7,Am,E7(1x) A7 Ab7(2x)'],[],['G7,%,Am,%'],['Em7(b5),A7,Dm,%'],['Bm7(b5),E7,Am,Am/G'],['Dm/F,%,Bm7(b5),E7']],
+[['A Flor e o Espinho-2'],['Dm'],['Em7(b5),A7,Dm,Dm/C'],['Gm6/Bb,A7,Dm,A7'],[],['Dm,Dm/C,Gm6/Bb,%'],['Em7(b5),A7,Dm,%'],['Am7(b5),D7,G7,%'],['Gm7,C7,F,A7 (2x to 4)'],['Em7(b5),A7,Dm,Dm/C'],['Gm6/Bb,A7,Dm,A7(1) Dm Db7(2x)'],[],['C7,%,F,%'],['Am7(b5),D7,Gm,%'],['Em7(b5),A7,Dm,Dm/C'],['Gm6/Bb,%,Em7(b5),A7 (to 2)'],[],['Gm6,A7,Dm,Dm/C'],['Gm6/Bb,A7,Dm,D7 (1-2) Dm (3)']],
+[['A semente'],['Dm'],['Gm A7,Dm,Gm A7,Dm']],
+[['Agoniza Mas Não Morre'],['Cm'],['Cm7,%,G7/B,%'],['Gm7(b5),C7,Fm,%'],['Ab7,G7,Ab6,Dm7(b5)'],['G7,Cm,Bbm/Db,C7'],['Bbm/Db,C7,Bbm/Db,C7'],['Fm,%,F#dim,Cm'],['Cm/Bb,D7,G7,Bbm/Db C7'],['Fm,F#dim,Cm,Cm/Bb'],['D7,G7,Cm7,']],
+[['Aí, seu pinguça'],['Dm / F'],['A7 Dm,A7 Dm,D7 Gm,E7 A7*'],['A7 Dm,A7 Dm,D7 Gm,Dm A7 Dm'],[],['F F(#5) Gm,C7 F,F G7 C,Dm G7 C7'],['F F(#5) Gm,A7 Dm,Bb F D7,Gm C7 F']],
+[['Apelo'],['Am'],['Am,E/G#,Gm6 A7(b9),Dm7 A7(b13)'],['Dm Dm/C Bm7(b5) E7(b9),Am7 Am/G,Dm/F Bb7(#11),Bm7(b5) E7(b9)'],['Am,E/G#,Gm6 A7(b9),Dm7 Eb7(9)'],[],['Dm7 D#dim,Am7/E F7M,Dm7 E7(b9),Am7 E7(b9) (1x)'],[',,,Em7 A7(b9) (2x)'],[',,,Am7 (3x)']],
+[['Arrasta Pe'],['Gm'],['D7,Gm,D7,Gm G7'],['Cm7 F7,Bb Gm,Cm6 D7,Gm'],[],['D7,Gm,D7,Gm (1x)'],[',,,Gm G6 (2x)'],[],['D7,G6,D7,G'],['D7,G,D7,G (1x)'],[',,,G Gm6 (2x)']],
+[['Baile do Elite'],['A'],['A D#dim,A/E F#7,B7 E7,A'],[],['Bm7,E7,A,%'],['Em7,A7,D,%'],['Dm/F,G7,A G7,F#7'],['B7/D#,E7,A,']],
+[['Barracão-1'],['Cm'],['Cm,Db,Dm7(b5) G7,Cm'],['Cm,Bb7,Ab7,G7'],[],['G7,Cm,Db,G7']],
+[['Barracão-2'],['Am - Dm'],['Am,Bb,Bm7(b5) E7,Am'],['Am,G7,F7,E7'],[],['E7,Am,Bb,E7 (1x)'],[',,,Bm7(b5) E7 (2x)'],['Em7(b5) A7,,,'],['Dm,Eb,Em7(b5) A7,Dm'],['Dm,C7,B7,A7'],[],['A7,Dm,Eb,A7']],
+[['Benzinho'],['Dm - F'],['Dm,%,A7,%'],['Bb7,%,A7,%'],['D7,D7 D7/C,Gm/Bb,Gm6'],['E7,%,A7,%'],['Dm,%,A7,%'],['Bb7,%,A7,%'],['D7,D7 D7/C,Gm/Bb,Gm6'],['Dm Bb7,Eb A7,Dm,C7'],[],['F6,F#dim,C7/G,%'],['Gm7,G#dim,F/A,F6'],['F7 E7 Eb7,D7,G7,%'],['Bbm/Db,C7,F6 Am/E,Bb C'],['F,F#dim,C7/G,%'],['Bb7,A7,Dm,D7'],['Gm,G#dim,F7 E7 Eb7,D7'],['G7,Bbm C7,F,C7 (↖B) A7(↖A)']],
+[['Chega de Saudade'],['Dm - D'],['Gm7,A7,Dm,Dm/C'],['E7/B,A7,Dm7,Eb7(9)'],[],['Dm,Dm/C,E7/B (Bdim),%'],['Bbm6,A7(b13),Dm7,Eb7(9)'],['Dm7,Dm6,Am7,%'],['Bb6,%,A7,A7(b13)'],['Dm,Dm/C,E7/B,%'],['Bbm6,A7(b13),D7M,D7(b9)'],['Gm7,A7(b13),Dm,Am/C'],['E7/B,Bbm6 A7(b13),Dm7,Em7 A7(13)'],[],['D7M(9),B7(b13),E7(9),E7'],['A74(9),A7(9),Ddim,D6'],['D7M,Ddim(7M),Em7,%'],['E7(9),%,Gm6/Bb,A7(b9)'],['D7M(9),Bm7,E7(9),%'],['F#7,%,Bm7 Bbdim,Am7 D7(b9)'],['G7M,Gm7,F#m7,B7(13) B7(b13)'],['E7(9),A4(913),F#7(13) F#7(b13),B7(b13)'],['E7(9),A4(913),D69,B7(b13)'],['E7(9),A4(913),D69,B7(b13)'],['E7(9),A4(913),D69,']],
+[['Choro Negro'],['Gm - G (H)'],['Bbm6 Abm6,Gm Gm(#5) Gm6,Cm7 F7,Bb7M Bb6'],['Bb7 Eb7(9),Ab7M,A7sus4 A7,Cm6 D7'],['Bbm6 Abm6,Gm Gm(#5) Gm6,Cm7 F7(13),Bb7M Bb6'],['Bb7 Eb7(9),G7M E7,Am7 D7,G6'],[],['Bm7,Cm6,G G7,C7M'],['Cm7 F7,Bb Gm,Em7 A7,Am7 A#°'],['Bm7,Cm6,G G7,C7M'],['C7M C#°,G/D E7,Am7 D7,G6'],[],['Bbm6 Abm6,Gm6,,']],
+[['Cinema Mudo'],['Gm - G (H)'],['Gm Gm(5#),Gm6 Gm(5#),Gm Gm(5#),Gm6 Gm(5#)'],[],['Gm,%,Cm,%'],['D7,%,Gm,Gm D7'],['Gm,Em7(b5),Dm,%'],['A7,%,Cm,D7'],['G7,%,Cm,Cm Cm7'],['F7,%,Bb Ab7,G7'],['Cm,Am7(b5) D7,Gm,Bb7'],['A7,D7,,'],[],['G/B,Am D7,G,%'],['B7,%,Em,%'],['G7,Dm7 G7,C,%'],['Cm6,D7,G/B,G#dim'],['D7/A,D7,G,%'],['B7,%,Em,%'],['G7,Dm7 G7,C,Cm6'],['G,E7,Am,D7'],['G,D7,,'],[],['D7,Gm,Cm6,Gm']],
+[['Cochichando'],['Dm - F - D '],['Dm,A7 Em7(b5),A7,Dm A7'],['Dm Bm7(b5),Am,E7,A7'],['Dm,A7,%,Cm6 D7'],['Gm Em7(b5),Dm Dm/C,E7/B A7,Dm (1x)'],[',,,Dm Db7 C7 (2x)'],[',,,Dm A7 (3x)'],[],['F D7/F#,Gm,C7 C/Bb,F/A'],['A7/C#,Dm,G7,C7'],['D7/F#,Gm,E7/G#,Am'],['Bb Bbm6/Db,F/C Dm,Gm C7,F A7'],[],['D A7,D,D B7/D#,Em'],[',,D D#dim,'],['F#7,B7/D#,E7,A7'],['D,%,Am D7/C,G/B'],['Gm6/Bb,D/A Abdim,Em/G A7,D A7 (1x)'],[',,,D (2x)'],[',,,Dm (3x)']],
+[['Coisa de Pele (7crds)'],['G (H)'],['G6 G6/D,Am/C,Bm,E7 E/D'],['Am/C,D7,G E7/G#,Am D7/F#'],[],['G7M,F#m7(b5) B7/D#,Em Em/D,Dm/F G7'],['C Cm/Eb,G E7,A7/C#,Am/C D7'],[],['Gm,D7,Dm7(b5) G7,Cm G7/D Cm/Eb'],['F7,Bb/D,A7/C#,Cm/Eb D7'],['G D7,,,'],[],['G D7/F#,Em,Am D7,G D7']],
+[['Corcovado'],['Am (H)'],['Am6,G#dim(b13),Gm7,C7(9)'],['F7M,Fm6,Em7,Am7'],['D7(9),G#dim(b13),,'],[],['Am6,%,G#dim(b13),%'],['Gm7,C74(9),Gb7(#11),F6'],['Fm7,Bb7(9),E7(13) E7(b13),A74(9) A7(b9)'],['D7(9),%,F6/G,Fm6'],[],['Am6,%,G#dim(b13),%'],['Gm7,C74(9),Fdim,F6'],['Fm7,Bb7(9),Em7,Am7'],['Dm7,G74(9) G74(b9),E7(13) E7(b13),A74(9) A7(b9)'],['Dm7(9),G74(9) G#dim,Am6,']],
+[['Corra e Olhe o Céu-1'],['D'],['G6,Gm6,D,B7'],['E7,A7,Am7,D7(9)'],['G7M,G#dim,D,B7'],['E7,A7,D,A7'],[],['D,%,A7,%'],['Am7,D7(9),G7M,%'],['Gm6,%,E7,A7'],[],['D,%,A7,%'],['Am7,D7(9),G7M,G#dim'],['D,B7,E7,A7'],['Am7,D7(9),G7M,G#dim'],['D,B7,E7,A7'],['D,A7 (1 2x) D7(3x),,']],
+[['Corra e Olhe o Céu-2'],['D'],['G6,Gm6/Bb,D/A,B7 B7/F#'],['E7,A7,Am/C,D7(9) Am6'],['G7M/B,G#dim,D,B7/D#'],['E7,A7,D,A7/C#'],[],['D6(9),%,A7/C#,%'],['Am/C,D/C,G7M/B,%'],['Gm6/Bb,%,E7/G#,A7'],[],['D6(9),%,A7/C#,%'],['Am/C,D7/A,G7M,Bdim'],['D,B7/D#,E7,A7'],['Am,D/C,G7M/B,G#dim'],['D/F#,B7,E7,A7'],['D,A7(1-2x) D7/F# (3x),,']],
+[['Dança da Solidão'],['Am'],['Am,A7,Dm E7,Am B7'],['E7,Am A7,Dm,Am E7'],['A7,,,'],[],['Dm Bm7(b5) E7,Em7(b5) A7,Dm Bm7(b5) E7,Am'],[],['E7,Am,A7,Dm'],['Bm7(b5) E7,Am,E7,Am']],
+[['De Mais Ninguém'],['Am'],['Dm Bm7(b5),Am B7 E7,,'],[],['Am Am/G,F6,Bm7(b5) E7,Am E7'],['Am A7/C#,Dm,G7 G/F,C/E C/Bb'],['A7 A7/C#,Dm,G7,C E7/B'],['Am Am/G,F6,Bm7(b5) Dm6/F,E7 E7/G#'],[],['Am Am/G,F6,Bm7(b5) E7,Am E7']],
+[['Deixa eu ir a luta'],['Cm'],['Cm,Eb7,Ab7M,G7'],['Cm,Eb7,Ab7M,G7'],[],['Cm,Cm,Bb7(4),Bb7'],['Eb,Eb,Bb7(4),Bb7'],['Eb,Eb,Dm7(b5),G7'],['Cm,Cm,Dm7(b5),G7']],
+[['Diplomata'],['Gm - Bb'],['Gm Gm/Bb,D7/A D7,Gm Gm/Bb,D7/A D7'],[],['Gm Gm/Bb,D7/A,D7/F#,Gm'],['G7/B,Cm7,F7,Bb D7'],['Gm Gm/Bb,D7/A,D7/F#,Gm G7/B'],['Cm7 F7,Bb Eb,Ab D7,Gm'],[],['F7,Bb,D7/F#,Gm'],['Eb Edim,Bb/F,C7/E F#7,F7'],['F7,Bb,D7/F#,Gm'],['Eb Edim,Bb/F Gm7,Cm7 F7,Bb'],['D E F# G,Bb Bb A Eb,Eb D,']],
+[['Do jeito que o rei mandou'],['Bm'],['Bm,Bm B7,Em,C#m7(b5) F#7'],['Bm Bm/A,Em/G,F#7,Bm'],[],['Bm,B7 Em,Em C#m7(b5),F#7 Bm'],['F#7 Bm,B7 Em,F#7 Bm,F#7 Bm'],['F#7,,,']],
+[['Fadas-1'],['Am'],['Am,B7,Bm7(b5) E7,Am E7'],['Am,B7,Bm7(b5) E7,Am E7'],['Am,B7,Bm7(b5) E7,Am A7'],['Dm G7,C,B7,E7'],[],['Am,Dm,Bm7(b5) E7,Am E7'],['Am,Dm,Bm7(b5) E7,Am']],
+[['Fadas-2'],['Dm'],['Dm,E7,Em7(b5) A7,Dm A7'],['Dm,E7,Em7(b5) A7,Dm A7'],['Dm,E7,Em7(b5) A7,Dm D7'],['Gm C7,F,E7,A7'],[],['Dm,Gm,Em7(b5) A7,Dm A7'],['Dm,Gm,Em7(b5) A7,Dm']],
+[['Faixa Amarela'],['D'],['D B7,Em,A7,D A7']],
+[['Fita Amarela'],['Dm'],['Dm,Em7(b5) A7,Em7(b5) A7,Dm A7'],[],['Dm,Em7(b5),A7,Dm']],
+[['Flor Amorosa'],['C - Am - F'],['Dm7 G7,C7M,Dm7 G7,Gm C/Bb'],['F/A Fm6/Ab,C7M A7,D7 G7,C7M'],[],['Am Am/G,Dm/F,Bm7(b5) E7,Am7 E7'],['Am7 A7/C#,Dm,E7 Bm7(b5) E7,Am7'],[],['C7,F7M F#dim,Gm7,C7'],['F7M C7,F7M,Am7,E7'],['Am7 C7,F7M F#dim,Gm7,C7'],['F7M C7,F7M F7,Bb7M Bdim,F D7 Gm C7']],
+[['Gaúcho (Corta Jaca)'],['Dm - F'],['Dm Dm/F,A7/E A7/G,Dm Dm/F,A7/E A7/C#'],['Dm,A7/E,Dm,A7/E'],['Dm,A7/E,Dm,A7/E'],['D7,Gm,A7,Dm'],['D7,Gm,A7,Dm'],['A7/E,Dm,A7/E,Dm D Db C'],[],['C7,%,F,%'],['Gm,C7,F G A B,C F D C A F'],['C7,%,F,%'],['(1x) Dm,Bb,A7, A Bb B C'],['(2x) Gm,C7,F,A7 ']],
+[['Insensatez'],['Am'],['Am7,E7/G#,Gm6,D/F#'],['Dm/F,Bb7M,Bm7(b5) E7(b9),Am7'],['C7/G,Gbdim,F7M Dm7(9),Am7'],['C7/G,B7/F#,Dm6/F E7(b9),Am7']],
+[['Insensato Destino'],['G'],['G,F#m7(5-) B7,Em,Dm G7'],['C Cm,G E7,A7,Am D7'],['C Cm,G E7,Am D7,Dm G7'],['C Cm,G E7,Am D7,G'],['Gm,Cm,F7,Bb7+'],['Am7(5-),D7 Gm,Gm7 A7, D7 Gm'],['Gm7 A7,D7 Gm,Gm7 A7,D7 Gm']]
+[['Jogo de sedução'],['C'],['C,C7,F,Fm']],
+[['Juízo Final'],['Cm'],['Cm,Db,G7,Fm'],['Ab7,G7,Cm,Db'],['G7,Fm,G7,Cm C7'],[],['Fm,G7,Ab7,G7'],['Fm,G7,Ab7,G7']],
+[['Jura'],['C'],['G7 C,G7 C,G7 C,G7 C G7'],[],['C,Dm,G7,C'],['C,G E7,A7 D7,Dm G7'],['C,Dm,G7,C'],['C7,F D7,C G7,C C7'],[],['F G7,C A7,Dm G7,C C7'],['F G7,C A7,Dm G7,C']],
+[['Lua Aberta'],['Dm'],['Dm A7,Dm F,Bb7 A7,Dm A7'],[],['Dm,A7,Dm,Cm D7'],['Gm (D7),Gm,A7,Dm'],['Bb7,A7,,'],[],['C7,F,Cm D7,Gm'],['Em7(b5),A7,Dm,Bb7'],['A7,Dm,,'],[]],[['Mulheres'],['Bm'],['Bm B7,Em A7,D Bm,Em F#7'],['Bm B7,Em A7,D Bm,Em F#7'],['Bm B7,F#7,Bm B7,G F#'],[],['Bm B7,G F#7,Bm B7,Em F#7']],
+[['Me Erra'],['Am'],['Dm,Am,F7 E7,A7'],['Dm,Am,F7 E7,A7'],['Dm,Am,Bm7(b5) E7,Am A7'],[],['Dm,Am,Bm7(b5) E7,Am A7'],[],['A7,Dm,G7,Am7'],['F,E7,Dm E7,Am']],
+[['Meu Caro Amigo'],['Am (H)'],['3xC/E Eb°,Dm7 G7/F,C/E Eb°,Dm7 G7/F'],[', xx3433,,'],['Gm7 C7,F/A Fm/Ab,C/E D7,G7(4) G7'],[],['C/E Eb°,Dm7 G7/F,C/E Eb°,Dm7 G7/F'],['C/E Eb°,Dm7 G7/F,C/E Eb°,Bm7(b5) E7/G#'],['Am Am/G,F#m7(b5) B7,Em7(b5) A7,D7/F# G7/F'],['C/E Eb°,Dm7 G7/F,Em7(b5),A7'],['D7,Fm6/Ab,Em7 A7,D7(9) G7(13)'],['Em7(b5) A7,D7(9) G7(13),Em7(b5) A7,D7(9) G7(13)'],['C6(9),,,']],
+[['Naquela Mesa'],['Am - Dm - Em'],['Am,%,%,%'],['Dm,%,E7,%'],['Am E7,Am,%,A7'],['Dm,%,Am,Bm7(b5) E7'],['Em7(b5) A7,Dm,Am,Bm7(b5) E7'],['A7,,,'],['Dm,%,%,%'],['Gm,%,A7,%'],['Dm A7,Dm,%,D7'],['Gm,%,Dm,Em7(b5) A7'],['Am7(b5) D7,Gm,Dm,Em7(b5) A7'],['Am B7,,,'],['Em,%,%,%'],['Am,%,B7,%'],['Em B7,Em,%,E7'],['Am,%,Em,F#m7(b5) B7'],['Bm7(b5) E7,Am,Em,F#m7(b5) B7']],
+[['Naquele Tempo'],['Dm'],['A7,Dm,A7,Dm'],['D7,Gm,E7,A7 (break)'],['A7,Dm,A7,Dm'],['D7,Gm Em7(b5),Dm E7 A7,Dm'],[],['F A7 Dm D7,Gm,C7,F'],['A7,Dm,G7,C7'],['F A7 Dm D7,Gm,A7,Dm'],['Gm A7,Dm D7,Gm C7,F'],[],['D A7,D,D B7,E7'],['E7,A7,A7,D A7'],['D A7,D,D7,G'],['Gm,D B7,E7 A7,D Bm E7 A7']],
+[['No Cordao da Saidera'],['Em (H)'],['Em,C/Bb,F#m7(b5) B7(b9),Em7'],['Bm7(b5) E7(b9),Am7 F#m7(b5),Em7(9) F#7,Am6/C B7'],['E7,Am7 A#°,G/B C7M,Bm7(b5) E7(b9)'],[],['A/C# Cm6,G/B Bb°,Am7 B7(b9),Bm7(b5) E7(b9)'],[],['Am7 A#°,G/B C7M,F#m7(b5) B7(b9),Bm7(b5) E7(b9) (1x / 3x)'],[',,,Em7 B7(b9) (2x -> A)']],
+[['Noites Cariocas'],['G - C'],['G7M,%,Bbdim,D7'],['G7M,E7/G#,Am E7/B,Am/C'],['Am Am/G#,Am/G,F#m7(b5) Am/E,D7'],['D7,D(#5),G7M Em,Am D7'],[',x5433x,,'],['G7M,%,Bbdim,D7'],['G7M,E7/G#,Am E7/B,Am/C'],['C,Bbdim,G7,E7'],['A7,D7,G7M,%'],[],['G7,%,C,%'],['A7,%,Dm A7/E,Dm/F'],['F,F#dim,C/G,Am B7'],['E C#m,F#m B7,E,G7'],[],['G7,%,C,%'],['A7,%,Dm A7/E,Dm/F'],['F,B7/F#,E7/G#,A7'],['Dm,G7,C,%'],[',,C C#7,D7'],[],['C#dim,Bbdim,G7 F#7 F7,E7'],['A7,D7,G,%']],
+[['O Bom Filho à Casa Torna'],['Dm / F / D'],['Dm A7,Dm A7,Dm C7,E7 A7'],['Dm A7,Dm A7,D7 Gm,Dm A7 Dm'],[],['C7 F,Gm C7 F,Gm A7 Dm,Bb7 A7'],['C7 F,Gm C7 F,Gm A7 Dm Bb7,F C7 F'],[],['D A7,D A7,D A7,D A7'],['D G,D D7,G7,F#7'],['G7,F#7,Em A7,D'],['A7 A,Fdim D7,G Gm,D B7'],['Em A7,D A7 D,,']],
+[['O Mundo é um Moinho'],['A'],['D#m7(b5),E/D,C#m7,Cº'],['Bm7,B7 E7,A6(9),G7 F#7'],[],['Bm7 Bm/A,E7/G# E7,C#m7,A A/G'],['D/F#,Bm7,E7,C#m7(b5) F#7(1) E7/B (2)'],[',,,Em7 A7'],[],['D#m7(b5),E/D,C#m7,Cº'],['Bm7,E7,Bbdim,F#7 F#7/E'],[',,A6(9),G7 F#7']],
+[['O Quitandeiro-1'],['C'],['C G7,C,C A7,Dm A7'],['Dm A7,Dm A7,Dm G7,C A7 Dm G7'],['C G7,C,Gm C7,F'],['Fm,Em A7,Dm G7,C G7'],[',,,C A7'],['Dm G7,C,Gm C7,F'],['Fm,Em A7,Dm G7,C G7']],
+[['O Quitandeiro-2'],['D'],['D A7,D,D B7,Em B7'],['Em B7,Em B7,Em A7,D B7 Em A7'],['D A7,D,Am D7,G'],['Gm,F#m B7,Em A7,D A7'],[',,,D B7'],['Em A7,D,Am D7,G'],['Gm,F#m B7,Em A7,D A7']],
+[['Odeon'],['Dm - F (H)'],['Dm/F A7/E,Dm D/C,Gm/Bb D7/A,Gm'],['Gm Gm/F,Em7(b5) Bb7/D,A7/C# A7/E,Dm'],['Dm A7/E,Dm/F D7/F#,Gm D7/A,Gm/Bb'],['A7,Dm Gm,A7/C#,Dm'],[],['G/D C7/E,F F/A,C7/G,F#°'],['Gm/Bb,F/C B°/C,C7,F F/C (1-3x)'],[',,,F (2-4x)'],[],['F#°,C7/G,C7,F'],['F#°,C7/G,C7,F'],['F#°,Gm,A7/E,Dm'],['B°,F/C,G7/C,C7'],[',F/C F/A,Gm/Bb C7,F']],
+[['Onde Anda Você'],['C'],['A7(#9),D7(9),G7(13),C7M'],['Em7 D#dim,Dm7,G7(13),C7M(1x) Gm7(2x)'],[],['C7(9),F#m7(b5),Fm6,Em7(11)'],['A7(b9),D7(9),G7(13),E7(13) E7(b13)'],['A7(9) C7,F#m7(b5),Fm6,Em7'],['A7(b9),D7(9),G7(13),C7M']],
+[['Onde Está Florisbela'],['Dm/F'],['F,A7,Dm,A7'],['Dm,%,C7,Bb7'],['A7,%,Dm,%'],['G7,%,Gm,C7'],[],['F,A7,Dm,A7'],['Dm,Bb7,A7,D7'],['Gm,C7,F,D7'],['Gm,C7,F,D7'],[],['Gm,C7,F,%'],['Cm7,F7,Bb,%'],['Bbm,%,Am,D7'],['Gm,C7,F*,C7*']],
+[['Pagode na casa do gago'],['C'],['G7 C,A7 Dm,Dm G7,G7 C'],['G7 C,A7 Dm,Dm G7,G7 C'],[],['A7 Dm,G7 C,A7 Dm,G7 C'],['A7 Dm,G7 C,A7 Dm,G7 C']],
+[['Papai Vadiou'],['F'],['F D7,Gm C7,F D7,Gm C7']],
+[['Para Ver as Meninas-1'],['Am'],['Am C7,B7,Bm7(b5) E7,Am A7'],['Em7(b5) A7,Dm,G7,C7M E7'],[],['A7,Em7(b5) A7,Dm,Bm7(b5) E7'],['Am,C7,F7 E7,Am E7'],[],['Am G7,C7M A7,Dm E7,Am A7'],['Dm Bm7(b5) E7,Am E7,Am,']],
+[['Para Ver as Meninas-2'],['Gm'],['Gm Bb7,A7,Am7(b5) D7,Gm G7'],['Dm7(b5) G7,Cm,F7,Bb7M D7'],['G7,Dm7(b5),G7,Cm'],['Am7(b5) D7,Gm,Bb7,Eb7 D7'],['Gm D7,Gm F7,Bb7M G7,Cm D7'],['Gm G7,Cm Am7(b5) D7,Gm D7,Gm']],
+[['Pressentimento-1'],['Am'],['Am Am/G#,Am/G F#m7(b5),Dm/F E7,Am E7'],[],['Am E7,Am,Dm/F G7,C'],['Bm7(b5) E7,Am Am/G,Dm/F Bm7(b5),E7 E7/G#'],['Am E7,Am,Dm/F G7,C'],['Bm7(b5) E7,Am Am/G,B7/F# E7,Am E7'],[],['A F#m,C#m,D E7(9),A A7/C#'],['Bm7(b5) E7,Am Am/G,B7/F#,E7 G7'],['C,G7,F G7,C'],['Bm7(b5) E7,Am Dm7,Am E7,Am E7']],
+[['Pressentimento-2'],['Gm'],['Gm,Gm Em7(b5),Cm D7,Gm D7'],[],['Gm D7,Gm,Cm F7,Bb'],['Am7(b5) D7,Gm,Cm Am7(b5) ,D7'],['Gm D7,Gm,Cm F7,Bb'],['Am7(b5) D7,Gm,A7 D7,Gm D7'],[],['G Em,Bm,C D7(9),G'],['Am7(b5) D7,Gm,A7,D7 F7'],['Bb,F7,Eb F7,Bb'],['Am7(b5) D7,Gm Cm7,Gm D7,Gm D7']],
+[['Proezas de Solon'],['Dm - F - Bb (H)'],['F D7/F#,G7,C7 C7/G,F'],['F,C,G/B,C'],['F D7,Gm,A7,Dm'],['Bb Ab°,F/A D7,G7 C7,F'],['Bb B°,F/C D7/F#,,F'],[],['A7,Dm,D7/F#,Gm'],['Em7(b5),Dm,E7/G#,A7 (bb - b)'],['C7,F,A7,Dm D7/F#'],['Gm,Dm,A7/C#,Dm'],[',,,d - db - C7'],[],['Bb,Cm7,C7,Ebm/Gb F7'],['Bb G7/B,Cm7,F7,Bb'],['Bb7 ou Bb/Ab,Eb ou Eb/G,G7/B,Cm'],['Ebm/Gb,Bb/F Gm7,C7/E F7,Bb'],[',,,bb- b - C7']],
+[['Propagas'],['Cm'],['Cm,Bb,Ab,G7'],[],['Cm Fm,G7 Cm,Cm Fm,G7 Cm'],['Cm Bb,Ab G7,Cm Fm,G7 Cm'],[],['Cm Fm,G7 Cm,Cm Bb,Ab G7']],
+[['Renascer das Cinzas'],['Am'],['Am A7,Dm,Bm7(b5) E7,Am'],['Em7(b5) A7,Dm,G7,C Bm7(b5) E7']],
+[['Rosa'],['Dm - F (H)'],['Bb,Bbm6,F/A,D7(9)'],['Gm7,C7,F,C(#5)'],[],['F,F/A,Gm,C7'],['F,F/A,Gm,Gm7'],['A7/C#,A7,Dm,D7(9)'],['Gm,G7,Gm7,C7'],['F,F F/A,Gm,C7'],['Cm7,F7,Bb F7,Bb'],['Bbm/Db,Gm7(b5),F,D7'],['Gm Gm7,C7(9),F C7,F A7'],[',,,F F7'],[],['Dm,Dm/C,Gm/Bb,A7'],['A/G,Dm/F,Dm,D/C'],['D7,Gm,Gm/F,E7'],['E7(b9),A7,,Dm'],['Dm/C,E7/B,Gm/Bb,A7'],['A/G,D7/F#,D7(b9),Gm'],['A7(b13),Dm,%,Gm'],['A7(b9),Dm A7,Dm C7,']],
+[['Samba de um Minuto'],['Gm (H)'],['Gm Gm/Bb,Am7(b5),Gm Gm/Bb,Am7(b5)'],['Gm Gm/Bb,Am7(b5),Gm Gm/Bb,F#°'],[],['Gm,%,Cm,Am7(b5)'],['Eb7 D7,Gm,F7,Bb'],['F7,Bb G7/B,Cm7 D7,Gm G7/B'],['Cm D7,Gm,Gm,F7'],['Eb7,D7,Cm D7,Gm Gm/F'],['Eb7,D7,F7,Bb'],['Am7(b5) D7,Gm G7/B,Cm D7,Gm'],['Eb7 D7,Gm,,']],
+[['Sampa'],['C'],['D7(9),Abm6 G7,C7M,G7(b13)'],[],['C7M,Bm7(b5) E7(b9),Am Am/G#,Am/G F#m7(b5)'],['F7M,A7 A7/C#,Dm A7/E,Dm/F'],['G7,G#dim Bdim,Am E7/B,Am/C'],['D7(9),%,%,%'],['Dm/F,G7,C7M,C/Bb'],['F/A,F#dim Adim,C/G A7(b13),Dm7(9) G7(b13)'],['E7/G#,A7(b13),D7(9),Abm6 G7'],['C7M,G7(b13),,']],
+[['São Demais os Perigos dessa Vida'],['C (H)'],['Em(ad9) C7M/E,C7 B7,Am6/C B7,Em(ad9)'],['Dm6/F E7(b9),Dm6/F E7(b9),Dm6/F E7(b9),Dm6/F E7(b9)'],['Am7 Am/G,B7/F# B7,F#m7(b5) B7,Dm6/F E7(b9)'],['Am7,A#dim ,Em/B C7M,F#m7(11) B7'],['E74 E7(b9),A#dim ,Em/B C7M,F#m7(11) B7'],['Em7(9),F#m7(b5) B7,Em7(9),Bm7(b5) E7(b9)'],['Am7,D7(9) D/C,C#m7(b5) C7M,B7'],['E74 E7,Bm7(b5) E7(b9),Am7 Am/G,Am6/C B7'],['Dm6/F E7(b9),Bm7(b5) E7(b9),Am7 Am/G,Am6/C B7'],['Em7(9) B7,Em7,C7 B7,Am6/C B7'],['C7M F7M,Em7(9),,']],
+[['Se a Fila Andar'],['Bb'],['Eb,Ebm,Dm,G7'],['C7,Ebm F7,Bb7M Bb6,Fm7 Bb7 (↖A)'],[',,Bb,F7 (↙B)'],[],['Bb,%,C7,%'],['Cm,F7,Bb,Bb6 Bb7M Cm F7 (↖)'],[',,Bb7M,Fm Bb7 (↖A)']],
+[['So pra chatear'],['Cm'],['Cm,,Fm,'],['Cm,,Ab,'],['Ab,,G7,Cm'],[],['Fm,,Bb7,'],['Eb,,Cm,'],['Dm7(b5),,G7,Cm'],[],['Bb7,,Eb,'],['G7,,Cm,Gm7(b5) C7'],['Fm,,Cm,'],['Ab7,,G7,C7'],['Fm,,Cm,'],['Ab7,G7,Cm,']],
+[['Sufoco'],['Am'],['Am7,Bm7(b5) E7(b9),Am7 ,Dm/F G7'],['C G/B Gm/Bb A7,Dm G7,C F7M,Bm7(b5) E7'],['A7 A7/C#,Dm G7,C F7M,Bm7(b5) E7'],['A F#7 Bm7 E7,,,'],[],['A A#dim,Bm7,E7 E7/G#,A E7'],['A F#7,Bm7,E7 E7/G#,A A#dim Bm7 E7']],
+[['Tiê'],['F'],['F,Gm C7,F,Gm C7']],
+[['Tiro Ao Álvaro'],['Bb'],['Bb G7/B,Cm7,F7,Bb Bb7'],['Eb Ebm,Dm7 G7,Cm7 F7,Bb F7(1x) Bb7(2x)'],[],['Eb F7,Bb G7,Cm7 F7,Fm7 Bb7'],['Eb F7,Bb G7,Cm7 F7,Bb F7']],
+[['Tristeza Pé no Chão'],['Dm'],['Dm,A7,Dm,%'],['%,D7,Gm,%'],['%,Bb A7,Dm,Dm7'],['Bb,A7,Dm,A7 (1x) D7 (2x)'],[],['Gm,%,Dm,Dm7'],['Bb,A7,Dm,D7 (1x) A7 (2x)']],
+[['Ultimo Desejo'],['Gm / G'],['Gm,Cm,D7,Gm Cm6/Eb D7'],['Gm,F7,Eb7,D7'],['G7,Cm,D7,Ab7 G7'],['Cm,Gm,Ab D7,G E7 Am D7'],[],['G,A7,Am D7,G Cm D7'],['Gm,F7,Eb7,D7'],['G,A7,Am D7,Dm G7'],['C Cm,G E7,Am Cm D7,Gm']],
+[['Velho Ateu-1'],['Gm'],['Gm,Cm,F7,Bb D7'],['Gm G7,Cm,Eb7 D7,Gm D7'],[',,,Gm Gb7'],[],['F7,Bb,G7,Cm'],['D7,Gm,A7,D7']],
+[['Velho Ateu-2'],['Em'],['Em,Am,D7,G B7'],['Em E7,Am,C7 B7,Em B7'],[',,,Em Eb7'],[],['D7,G,E7,Am'],['B7,Em,F#7,B7']],
+[['Vibrações'],['Dm - F (H)'],['Dm A7/E,Dm/F D7/F#,Gm D7/A,Gm/Bb'],[', xx4535,xx5333 xx7575,xx8786'],['A7,%,Dm A7,Dm'],['Cm6,D7,A°,Gm'],['E7/G#,E7,Gm6,A7'],['Cm/Eb,D7,G7,%'],['Bbm6/Db,C7,F,F D7'],['xx4536x,,,'],['Gm,Em7(b5),Dm,%'],['Gm,A7,Dm Db7,C7'],[',,Bb7,Gm6 - D'],[],['F,%,A7,%'],['Dm,%,Cm7,F7'],['Bb,Bbm6,F,Dm'],['G7,%,C7,Bbm6 C7'],['F,%,A7,%'],['Dm,%,Cm7,F7'],['Bb,Bbm6,F,A7 D7'],['G7,Bbm6 C7,F,%']]
 	];
 	tableCreate2(music)
 };
